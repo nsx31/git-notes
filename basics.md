@@ -112,7 +112,6 @@ If we want detailed information about what changes we made inside a file or mult
 # Comparing woking directory files with staging area/previous commit files.
 
 $ git diff
-
 diff --git a/CONTRIBUTING.md b/CONTRIBUTING.md
 index 8ebb991..643e24f 100644
 --- a/CONTRIBUTING.md
@@ -130,7 +129,6 @@ index 8ebb991..643e24f 100644
 # To comapre staging area files with previous commit we have to explicitely mentioned that
 
 $ git difff --staged
-
 diff --git a/README b/README
 new file mode 100644
 index 0000000..03902a1
@@ -233,7 +231,6 @@ git remote add <short_name> <url>
 $ git remote add pb https://github.com/paulboone/ticgit
 
 $ git remote -v
-
 origin	https://github.com/schacon/ticgit (fetch)
 origin	https://github.com/schacon/ticgit (push)
 pb	https://github.com/paulboone/ticgit (fetch)
@@ -244,13 +241,17 @@ pb	https://github.com/paulboone/ticgit (push)
 - `git fetch` command downloads all new data from the remote without merging it.
 
 ```sh
-$ git fetch <remote>  # Show me what’s new.
+$ git fetch <remote> 
 
-# After this: You’ll have updated info about remote branches.
-$ git diff main origin/main   # You can inspect changes using
-$ git merge origin/main       # Then manually merge if you choose
+# After running the fetch command, we’ll have the latest information from the remote branch.
+# We can now compare the differences between the local and remote repositories, review the
+# changes, and once everything looks good, merge those updates into the local branch.
 
-# NOTE : Use it when you want to review remote changes before applying them.
+$ git fetch origin
+$ git diff main origin/main   
+$ git merge origin/main       
+
+# NOTE : Use git fetch command when you want to review remote changes before applying them.
 ```
 
 - `git pull` command fetches and automatically merges changes into your current branch (if tracking a remote branch).
@@ -259,8 +260,8 @@ $ git merge origin/main       # Then manually merge if you choose
 $ git pull <remote> <branch> # Get what’s new and apply it to my branch
 
 # git pull is equivalent to :
-$ git fetch origin
-$ git merge origin/<branch_name>
+$ git fetch <remote>
+$ git merge <remote>/<branch_name>
 ```
 
 # Pushing to the remote 
