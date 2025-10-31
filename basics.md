@@ -50,14 +50,14 @@ Check the current status with:
 ```sh
 git status
 ```
-Example: Clean Working Directory
+**Example:** Clean Working Directory
 ```sh
 $ git status
 On branch master
 Your branch is up-to-date with 'origin/master'.
 nothing to commit, working tree clean
 ```
-Example: Untracked File
+**Example:** Untracked File
 ```sh
 $ git status
 On branch master
@@ -71,7 +71,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 ```
 All untracked files appear under the “Untracked files” section.
 
-Example: File Added to Staging Area
+**Example:** File Added to Staging Area
 ```sh
 $ git status
 On branch master
@@ -83,7 +83,7 @@ Changes to be committed:
 ```
 Git shows which files are staged and the type of change (e.g., new file, modified).
 
-Example: Modified Tracked File
+**Example:** Modified Tracked File
 ```sh
 $ git status
 On branch master
