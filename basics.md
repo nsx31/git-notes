@@ -1,4 +1,4 @@
-# What make git different compare to other VSC.
+# What makes git different compared to other VSC.
 
 Most traditional VCS store the differences (deltas) between file versions — i.e., what changed since the last update.
 
