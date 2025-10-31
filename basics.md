@@ -112,6 +112,7 @@ If we want detailed information about what changes we made inside a file or mult
 # Comparing woking directory files with staging area/previous commit files.
 
 $ git diff
+
 diff --git a/CONTRIBUTING.md b/CONTRIBUTING.md
 index 8ebb991..643e24f 100644
 --- a/CONTRIBUTING.md
