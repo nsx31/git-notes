@@ -152,7 +152,7 @@ $ rm README.md CONTRIBUTE.md
 $ git rm README.md CONTRIBUTE.md  
 
 # git rm command will automatically staged the changes and make git aware that we 
-# deleted some files but that does not mean we can do the same thing some other way
+# deleted some files but that does not mean we can't do the same thing some other way
 
 $ rm README.md CONTRIBUTE.md
 $ git add .
