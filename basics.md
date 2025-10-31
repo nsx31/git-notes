@@ -103,9 +103,9 @@ git add README.md CONTRIBUTE.md
 
 # Viewing Staged and Unstaged Changes 
 If we want detailed information about what changes we made inside a file or multiple files `git diff` command is used. This command compares :
-1. Working directory ↔ Staging area (default)
-2. Working directory ↔ Last commit (if staging area is empty)
-3. Staging area ↔ Last commit (with --staged flag)
+1. **Working directory ↔ Staging area** (default)
+2. **Working directory ↔ Last commit** (if staging area is empty)
+3. **Staging area ↔ Last commit** (with --staged flag)
 
 
 ```sh
@@ -147,7 +147,7 @@ $ git commit -m "type a commit message here !!"
 ```
 
 # Removing file from Git
-To delete a file from both the repository and your working directory:
+- To delete a file from both the repository and your working directory:
 
 ```sh
 $ rm README.md CONTRIBUTE.md
@@ -161,7 +161,7 @@ $ git add .
 # this is also perfectly fine
 ```
 
-To remove it only from the repository but keep it locally:
+- To remove it only from the repository but keep it locally:
 
 ```sh
 $ git rm --cached README.md
@@ -188,25 +188,25 @@ $ git commit --amend
 This replaces the previous commit with a new one.
 
 # Unstaging a Staged file
-To unstage a file `git reset HEAD <file_name> ...` command is used.
+- To unstage a file `git reset HEAD <file_name> ...` command is used.
 
 ```sh
 # CONTRIBUTION.md will be removed from the staging area.
 git reset HEAD CONTRIBUTION.md
 ```
-We can perform the similar task with `git restore --staged <file_name>` command.
+- We can perform the similar task with `git restore --staged <file_name>` command.
 
 ```sh
 git restore --staged CONTRIBUTION.md
 ```
 
 # Unmodifying a Modified file
-Discard local changes and restore the last committed version:
+- Discard local changes and restore the last committed version:
 ```sh
 git checkout -- <filename>
 ```
 
-We can do the same with `git restore` command.
+- We can do the same with `git restore` command.
 
 ```sh
 git restore <file_name>
@@ -241,7 +241,7 @@ pb	https://github.com/paulboone/ticgit (push)
 ```
 
 # Fetching and Pulling from Remote Repository
-`git fetch` command downloads all new data from the remote without merging it.
+- `git fetch` command downloads all new data from the remote without merging it.
 
 ```sh
 $ git fetch <remote>  # Show me what’s new.
@@ -253,18 +253,18 @@ $ git merge origin/main       # Then manually merge if you choose
 # NOTE : Use it when you want to review remote changes before applying them.
 ```
 
-`git pull` command fetches and automatically merges changes into your current branch (if tracking a remote branch).
+- `git pull` command fetches and automatically merges changes into your current branch (if tracking a remote branch).
 
 ```sh
 $ git pull <remote> <branch> # Get what’s new and apply it to my branch
 
 # git pull is equivalent to :
 $ git fetch origin
-$ git merge origin/<current-local-branch>
+$ git merge origin/<branch_name>
 ```
 
 # Pushing to the remote 
-Pushing the local project to the remote repo
+- Pushing the local project to the remote repo
 
 ```sh
 git push <remote> <local_branch>
