@@ -4,10 +4,10 @@ Most traditional VCS store the differences (deltas) between file versions — i.
 
 Git, on the other hand, takes snapshots of your entire project every time you make a commit. If a file hasn’t changed, Git simply links to the previously stored version instead of copying it again. This approach makes Git fast and efficient.
 
-Others : 
+**Others :** <br>
 ![others](./images/image.png)
 
-Git : 
+**Git :** <br>
 ![git](./images/image-1.png)
 
 # The Three Main Sections of a Git Project
