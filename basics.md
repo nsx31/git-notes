@@ -279,7 +279,7 @@ $ git merge <remote>/<branch_name>
 - Pushing the local project to the remote repo
 
 ```sh
-git push <remote> <local_branch>
+git push <remote> <remote_branch>
 ```
 
 # Renaming and Removing remote
