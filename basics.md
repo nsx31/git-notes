@@ -16,13 +16,24 @@ Git, on the other hand, takes snapshots of your entire project every time you ma
 3. **Git Directory (Repository)** — The database that stores all your project’s history and metadata.
 
 # Configuring basic git details.
-Set up your user identity and some useful defaults:
+- Set up your user identity and some useful defaults:
 ```sh
 git config --global user.name "nikhil kumar"
 git config --global user.email "nikhilkumar31@outlook.com"
 
 git config --global core.editor "code --wait"
 git config --global init.defaultBranch main
+```
+- SSH related
+```sh
+# After generating SSH key and adding it to the github. We can check whether everything
+# is working fine or not.
+$ ssh -T git@github.com
+
+# We can use same SSH key for commit signing
+$ git config --global gpg.format ssh
+$ git config --global user.signingkey ~/.ssh/<file_containing_ssh_key>.pub
+$ git config --global commit.gpgsign true
 ```
 
 # Getting a git repository.
