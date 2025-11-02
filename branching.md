@@ -6,21 +6,35 @@ $ git branch <branch_name>
 # Switching Branch
 ```sh
 $ git checkout <branch_name>
+
+# Alternate way
+$ git switch <branch_name>
 ```
 
-Creating a new branch and immediately switching to that branch
+- Creating a new branch and immediately switching to that branch
 ```sh
 $ git checkout -b <branch_name>
+
+# Alternate way
+$ git switch -c <branch_name>
 ```
 
 # Merge Branch
-- First switch to the branch you want other branch to merge into.
+- Switch to the branch you want other branches to merge into.
+- Run the `git merge` command and specify the branch you want to merge from.
 
-Example : Merging branch iss450 into master.
+**Example :** Merging branch iss450 into master.
 ```sh
 $ git checkout master
 $ git merge iss450
 ```
+
+- Type of merges : 
+    - **Fast forward merge.**
+    - **Three way merge.**
+
+- Sometimes during merging of branches some merege confict arises, without resolving those conflicts we cannot move further.
+
 # Delete a Branch
 
 ```sh
