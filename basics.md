@@ -31,9 +31,9 @@ git config --global init.defaultBranch main
 $ ssh -T git@github.com
 
 # We can use same SSH key for commit signing
-$ git config --global gpg.format ssh
-$ git config --global user.signingkey ~/.ssh/<file_containing_ssh_key>.pub
-$ git config --global commit.gpgsign true
+git config --global gpg.format ssh
+git config --global user.signingkey ~/.ssh/<file_containing_ssh_key>.pub
+git config --global commit.gpgsign true
 ```
 
 # Getting a git repository.
